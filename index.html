@@ -46,14 +46,6 @@
             </div>
         </div>
     </section>
-    <section class="featuredRecommended">
-        <div class="container">
-            <div class="featuredRecommended_inner">
-                <h2 class="featuredRecommended_title">FEATURED & RECOMMENDED</h2>
-
-            </div>
-        </div>
-    </section>
     <section class="slider">
         <div class="container">
             <h1 class="slider_title">FEATURED & RECOMMENDED</h1>
@@ -61,20 +53,55 @@
                 <div class="slide">
                     <div class="left-side">
                         <!-- Картинка основной игры -->
-                        <img src="img/cs2.jpg" alt="Game 1">
+                        <img id="mainGameImage0" src="img/cs2.jpg" alt="Game 1">
                     </div>
                     <div class="right-side">
                         <!-- Название игры -->
                         <h3 class="gameName">Counter-Strike 2</h3>
                         <!-- 4 картинки про игру -->
                         <div class="game-images">
-                            <img src="img/OIP.jpg" alt="Game 1 Image 1">
-                            <img src="img/загрузка (1).jpg" alt="Game 1 Image 2">
-                            <img src="img/загрузка (2).jpg" alt="Game 1 Image 3">
-                            <img src="img/загрузка.jpg" alt="Game 1 Image 4">
+                            <div class="image-container small-image">
+                                <img id="gameImage1" src="img/OIP.jpg " alt="Game 1 Image 1">
+                            </div>
+                            <div class="image-container big-image">
+                                <img id="gameImage2" src="img/загрузка (1).jpg" alt="Game 1 Image 2">
+                            </div>
+                            <div class="image-container small-image">
+                                <img id="gameImage3" src="img/загрузка (2).jpg" alt="Game 1 Image 3">
+                            </div>
+                            <div class="image-container big-image">
+                                <img id="gameImage4" src="img/загрузка.jpg" alt="Game 1 Image 4">
+                            </div>
                         </div>
                         <!-- Цена игры -->
-                        <p class="slider_price">$19.99</p>
+                        <p class="slider_price">Free to play</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="left-side">
+                        <!-- Картинка основной игры -->
+                        <img id="mainGameImage5" src="img/dota 2 img1.jpg" alt="Game 1">
+                    </div>
+                    <div class="right-side">
+                        <!-- Название игры -->
+                        <h3 class="gameName">Dota 2</h3>
+                        <!-- 4 картинки про игру -->
+                        <div class="game-images">
+                            <div class="image-container small-image">
+                                <img id="gameImage6" src="img/dota 2 img2.jpg " alt="Game 2 Image 1">
+                            </div>
+                            <div class="image-container big-image">
+                                <img id="gameImage7" src="img/dota 2 img3.jpg" alt="Game 2 Image 2">
+                            </div>
+                            <div class="image-container small-image">
+                                <img id="gameImage8" src="img/dota 2 img4.jpg" alt="Game 2 Image 3">
+                            </div>
+                            <div class="image-container big-image">
+                                <img id="gameImage9" src="img/dota 2 img5.jpg" alt="Game 2 Image 4">
+                            </div>
+                        </div>
+                        <!-- Цена игры -->
+                        <p class="slider_price">Free to play</p>
                     </div>
                 </div>
                 <!--Другие игры-->
@@ -83,12 +110,14 @@
         <!-- Навигация по слайдам -->
         <div class="slider-navigation">
             <!-- Кнопки для переключения слайдов -->
-            <button class="prev-slide"><</button>
+            <div class="prev-slide"></div>
             <div class="dots"><!-- Сюда будут добавлены точки --></div>
-            <button class="next-slide">></button>
+            <div class="next-slide"></div>
         </div>
     </section>
+    <section class="x">
 
+    </section>
     <script src="script.js"></script>
 </body>
 

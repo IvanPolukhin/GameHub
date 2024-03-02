@@ -26,8 +26,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const slides = document.querySelectorAll(".slide");
     const prevSlideButton = document.querySelector(".prev-slide");
     const nextSlideButton = document.querySelector(".next-slide");
-
+    const slideInterval = 5000;
     let currentIndex = 0;
+    let slideIntervalId;
 
     const showSlide = (index) => {
         slides.forEach((slide, i) => {
@@ -45,15 +46,51 @@ document.addEventListener("DOMContentLoaded", function () {
         showSlide(currentIndex);
     };
 
-    prevSlideButton.addEventListener("click", showPrevSlide);
-    nextSlideButton.addEventListener("click", showNextSlide);
+    const startSlideShow = () => {
+        slideIntervalId = setInterval(showNextSlide, slideInterval);
+    };
+
+    const stopSlideShow = () => {
+        clearInterval(slideIntervalId);
+    };
+
+    const handleSlideMouseover = () => {
+        stopSlideShow();
+    };
+
+    const handleSlideMouseout = () => {
+        startSlideShow();
+    };
+
+    slides.forEach(slide => {
+        slide.addEventListener('mouseover', handleSlideMouseover);
+        slide.addEventListener('mouseout', handleSlideMouseout);
+    });
+
+
+
+    prevSlideButton.addEventListener("click", () => {
+        stopSlideShow();
+        showPrevSlide();
+        startSlideShow();
+    });
+
+    nextSlideButton.addEventListener("click", () => {
+        stopSlideShow();
+        showNextSlide();
+        startSlideShow();
+    });
 
     showSlide(currentIndex);
 
     buttons.forEach((button, index) => {
         button.addEventListener("click", function () {
+            stopSlideShow();
             currentIndex = index;
             showSlide(currentIndex);
+            startSlideShow();
         });
     });
+    
+    startSlideShow();
 });

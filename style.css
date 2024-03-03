@@ -5,6 +5,7 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #1b2838;
+    font-family: sans-serif;
 }
 
 *,
@@ -161,6 +162,7 @@ h6 {
 }
 
 .gameName {
+    font-family: "Motiva Sans", Sans-serif;
     color: #fff;
     padding: 25px 0 0 20px;
     font-size: 24px;

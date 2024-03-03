@@ -327,6 +327,26 @@ h6 {
     transform: rotate(135deg);
 }
 
+.slider-counter {
+    text-align: center;
+    min-height: 37px;
+}
+
+.slider-counter div {
+    display: inline-block;
+    margin: 12px 2px;
+    width: 15px;
+    height: 9px;
+    border-radius: 2px;
+    transition: background-color 0.2;
+    background-color: hsla(202, 60%, 100%, 0.2);
+    cursor: pointer;
+}
+
+.slider-counter div.focus {
+    background-color: hsla(202, 60%, 100%, 0.4);
+}
+
 
 /* x */
 .x {

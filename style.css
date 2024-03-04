@@ -349,8 +349,12 @@ h6 {
     background-color: hsla(202, 60%, 100%, 0.4);
 }
 
+/* Special offers */
+.specialOffers {
+    margin-top: 50px;
+}
 
-/* x */
-.x {
-    margin-top: 300px;
+.specialOffers-title {
+    text-transform: uppercase;
+    color: #fff;
 }

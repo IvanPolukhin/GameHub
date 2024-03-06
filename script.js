@@ -101,12 +101,12 @@ document.addEventListener("DOMContentLoaded", function () {
         slides.forEach((slide, i) => {
             slide.style.display = i === index ? "flex" : "none";
         });
-    };
 
-    const counterDots = document.querySelectorAll('.dot1');
-    counterDots.forEach((dot, i) => {
-        dot.classList.toggle('focus', i === currentIndex)
-    });
+        const counterDots = document.querySelectorAll('.dot1');
+        counterDots.forEach((dot, i) => {
+            dot.classList.toggle('focus', i === index);
+        });
+    };
 
     const showNextSlide = () => {
         currentIndex = (currentIndex + 1) % slides.length;

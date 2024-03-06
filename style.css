@@ -653,3 +653,11 @@ h6 {
 .slider-counter1 div.focus {
     background-color: hsla(202, 60%, 100%, 0.4);
 }
+
+.col1 {
+    margin-right: 11px;
+}
+
+.col2 {
+    margin-right: 11px;
+}

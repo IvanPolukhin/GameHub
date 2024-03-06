@@ -29,6 +29,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const slideInterval = 5000;
     let currentIndex = 0;
     let slideIntervalId;
+    const prevSlideButton1 = document.querySelector(".prev-slide1");
+    const nextSlideButton1 = document.querySelector(".next-slide1");
 
     const showSlide = (index) => {
         slides.forEach((slide, i) => {
@@ -82,7 +84,17 @@ document.addEventListener("DOMContentLoaded", function () {
         slide.addEventListener('mouseout', handleSlideMouseout);
     });
 
+    prevSlideButton1.addEventListener("click", () => {
+        stopSlideShow();
+        showPrevSlide();
+        startSlideShow();
+    });
 
+    nextSlideButton1.addEventListener("click", () => {
+        stopSlideShow();
+        showNextSlide();
+        startSlideShow();
+    });
 
     prevSlideButton.addEventListener("click", () => {
         stopSlideShow();

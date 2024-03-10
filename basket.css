@@ -88,3 +88,59 @@ h6 {
     display: block;
     opacity: 1;
 }
+
+/* homePage */
+.homePage {
+    position: absolute;
+    height: 450px;
+    width: 100%;
+}
+
+.homePage_nav {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    background: linear-gradient(90deg, rgba(62, 103, 150, 0.919) 11.38%, rgba(58, 120, 177, 0.8) 25.23%, rgb(15, 33, 110) 100%);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+}
+
+.homePage_bnt {
+    padding-top: 8px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    margin-right: 25px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.homePage_bnt-space {
+    flex: 1;
+    width: 20px;
+}
+
+.homePage_bnt:first-child {
+    padding-left: 10px;
+}
+
+.homePage_search {
+    background-image: none;
+    background-color: #316282;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 1px 0px rgba(255, 255, 255, 0.2);
+    color: #fff;
+    margin-bottom: 0px;
+    margin-right: 5px;
+    outline: none;
+    height: 27px;
+    width: 202px;
+    padding: 0px 6px;
+}
+
+.search img {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 6px;
+    right: 6px;
+}

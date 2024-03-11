@@ -91,8 +91,6 @@ h6 {
 
 /* homePage */
 .homePage {
-    position: absolute;
-    height: 450px;
     width: 100%;
 }
 
@@ -143,4 +141,183 @@ h6 {
     position: absolute;
     top: 6px;
     right: 6px;
+}
+
+/* basket */
+.basket {
+    margin-top: 50px;
+}
+
+.basket_inner {
+    max-width: 940px;
+    min-height: 50vh;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.yourBasket {
+    font-weight: 800;
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.path {
+    color: #8f98a0;
+    margin-top: 25px;
+}
+
+.path a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.path a:hover {
+    text-decoration: none;
+    color: #66c0f4;
+}
+
+.path span {
+    color: #56707f;
+}
+
+.panel_basket {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.panelBasket_left {
+    max-width: 615px;
+    flex-grow: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.panelBasket_right {
+    flex-shrink: 0;
+}
+
+.desirable {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.desirable_game {
+    position: relative;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, .25);
+}
+
+.game_inner {
+    display: flex;
+    gap: 15px;
+}
+
+.game_left {
+    background-color: rgba(0, 0, 0, .2) 5;
+    width: 200px;
+    flex-shrink: 0;
+    height: 94px;
+}
+
+.game_img {
+    max-width: 100%;
+}
+
+.game_right {
+    flex-grow: 1;
+}
+
+.game_name {
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    flex-wrap: wrap;
+    font-size: 13px;
+}
+
+.game_iconAndPrice {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    flex-wrap: wrap;
+    font-size: 13px;
+}
+
+.whats_next {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    flex-wrap: wrap;
+    font-size: 13px;
+}
+
+.buttons_below {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.continue_Shopping {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.continueShopping {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    border: 0;
+    font: inherit;
+    overflow: visible;
+    margin: 2px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    display: block;
+    line-height: 32px;
+    color: #dfe3e6;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 2px;
+    cursor: pointer;
+    width: 100%;
+    transition-property: opacity, background, color, box-shadow;
+    transition-duration: .2s;
+    transition-timing-function: ease-out;
+    background: #3d4450;
+    background-position: 99% 1%;
+    background-size: 300% 300%;
+    position: relative;
+}
+
+.continueShopping::before {
+    pointer-events: none;
+    user-select: none;
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .3);
+    opacity: 0;
+    transition: opacity 200ms ease-in-out;
+}
+
+.deleteAllItems {
+    color: #606f7f;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 12px;
+    margin-left: 6px;
 }

@@ -661,3 +661,231 @@ h6 {
 .col2 {
     margin-right: 11px;
 }
+
+/* basketIcon */
+.basketIcon {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1500;
+}
+
+.basketIcon_bg {
+    background: rgba(0, 0, 0, .8);
+    z-index: 7;
+}
+
+.basketIcon_inner.active {
+    z-index: 10;
+}
+
+.basketIcon_content {
+    display: flex;
+    align-content: center;
+    height: 100%;
+    flex-direction: column;
+}
+
+.basketIcon .basketIcon_body {
+    height: initial;
+    width: initial;
+    max-width: 88vw;
+    max-height: 90vh;
+}
+
+.basketIcon_body {
+    box-shadow: 0px 8px 38px 5px rgba(0, 0, 0, .75);
+    margin: auto;
+    font-weight: 300;
+    color: #969696;
+    font-size: 16px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.basketIcon_body>* {
+    min-height: 0;
+    min-width: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.basketIcon_TopBar {
+    min-height: 1px;
+    min-width: initial;
+    flex-grow: initial;
+    flex-shrink: initial;
+    background: linear-gradient(to right, #00ccff, #3366ff);
+}
+
+.basketIcon_Dismiss {
+    min-width: initial;
+    min-height: initial;
+    flex-grow: initial;
+    flex-shrink: initial;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    z-index: 1;
+}
+
+.close_btn {
+    width: 14px;
+    height: 14px;
+    padding: 4px;
+    background-size: cover;
+    cursor: pointer;
+    background-image: none;
+    border-radius: 4px;
+}
+
+.SVGIcon_Button {
+    fill: #fff;
+    overflow: visible;
+    width: 100%;
+    height: 100%;
+    max-width: 320px;
+    max-height: 320px;
+}
+
+.SVGIcon_X_Line line {
+    stroke: #788a92;
+    stroke-width: 24px;
+}
+
+.basketIcon_dialog {
+    padding: 24px;
+    display: flex;
+    overflow: visible;
+    position: relative;
+}
+
+.DialogContent_InnerWidth {
+    max-width: 600px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.DialogContent_title {
+    font-weight: 800;
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.DialogContent_body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.DialogContent_btn {
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.panel_inner {
+    position: relative;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, .25);
+}
+
+.panel_body {
+    display: flex;
+    gap: 15px;
+}
+
+.panel_left {
+    background-color: rgba(0, 0, 0, .2) 5;
+    width: 200px;
+    flex-shrink: 0;
+    height: 94px;
+}
+
+.panel_right {
+    flex-grow: 1;
+}
+
+.panel_name {
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    flex-wrap: wrap;
+    font-size: 13px;
+}
+
+.panel_iconAndPrice {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    flex-wrap: wrap;
+    font-size: 13px;
+}
+
+.panel_next {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    flex-wrap: wrap;
+    font-size: 13px;
+}
+
+.DialogButton {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    border: 0;
+    font: inherit;
+    overflow: visible;
+    padding: 0;
+    margin: 2px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    display: block;
+    line-height: 32px;
+    color: #dfe3e6;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 2px;
+    cursor: pointer;
+    width: 100%;
+    transition-property: opacity, background, color, box-shadow;
+    transition-duration: .2s;
+    transition-timing-function: ease-out;
+    background: #3d4450;
+    background-position: 99% 1%;
+    background-size: 300% 300%;
+    position: relative;
+}
+
+.DialogButton::before {
+    pointer-events: none;
+    user-select: none;
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,.3);
+    opacity: 0;
+    transition: opacity 200ms ease-in-out;
+}
+
+.DialogButton.Primary {
+    background: transparent;
+    background: linear-gradient(to right, #47bfff 0%, #1a44c2 60%);
+    background-position: 25%;
+    background-size: 330% 100%;
+}

@@ -143,7 +143,46 @@ document.addEventListener("DOMContentLoaded", function () {
     startSlideShow();
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const basketIconContent = document.querySelector(".basketIcon_content");
+    const closeBtn = document.querySelector(".close_btn");
+    const continueShoppingBtn = document.querySelector(".DialogContent_btn button:first-child");
+    const viewBasketBtn = document.querySelector(".DialogContent_btn button:last-child");
 
+    // Функция для открытия окна корзины
+    function openBasket(item) {
+        const gameName = item.querySelector('.game_title').textContent;
+        const gameImage = item.querySelector('.panel_icons img').src; // Заменили на правильный класс
+        const gamePrice = item.querySelector('.panel_price-left').textContent; // Заменили на правильный класс
 
+        document.querySelector('.DialogContent_title').innerText = gameName;
+        document.querySelector('.game_image').src = gameImage;
+        document.querySelector('._1f3PID2BXOm-jAr3LGxkW3').innerText = gamePrice; // Заменили на правильный класс
 
-// BASKET
+        basketIconContent.style.display = "block";
+    }
+
+    // Открытие окна при клике на игру
+    document.querySelectorAll('.basketIcon_inner').forEach(item => {
+        item.addEventListener('click', event => {
+            openBasket(item);
+        });
+    });
+
+    // Закрытие окна при нажатии на крестик
+    closeBtn.addEventListener("click", function () {
+        basketIconContent.style.display = "none";
+    });
+
+    // Закрытие окна при клике на кнопку "Continue shopping"
+    continueShoppingBtn.addEventListener("click", function () {
+        basketIconContent.style.display = "none";
+    });
+
+    // Переход к просмотру корзины при клике на кнопку "View basket"
+    viewBasketBtn.addEventListener("click", function () {
+        // Здесь можно добавить код для перехода на страницу корзины
+        // Например:
+        // window.location.href = "view_basket.html";
+    });
+});

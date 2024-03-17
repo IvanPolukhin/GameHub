@@ -152,12 +152,12 @@ document.addEventListener("DOMContentLoaded", function () {
     // Функция для открытия окна корзины
     function openBasket(item) {
         const gameName = item.querySelector('.game_title').textContent;
-        const gameImage = item.querySelector('.panel_icons img').src; // Заменили на правильный класс
-        const gamePrice = item.querySelector('.panel_price-left').textContent; // Заменили на правильный класс
+        const gameImage = item.querySelector('.panel_icons img').src;
+        const gamePrice = item.querySelector('.panel_price-left').textContent;
 
         document.querySelector('.DialogContent_title').innerText = gameName;
         document.querySelector('.game_image').src = gameImage;
-        document.querySelector('._1f3PID2BXOm-jAr3LGxkW3').innerText = gamePrice; // Заменили на правильный класс
+        document.querySelector('._1f3PID2BXOm-jAr3LGxkW3').innerText = gamePrice;
 
         basketIconContent.style.display = "block";
     }

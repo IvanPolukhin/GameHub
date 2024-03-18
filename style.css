@@ -670,7 +670,11 @@ h6 {
     transform: translate(-50%, -50%);
     z-index: 1500;
     width: 650px;
+    background-color: #1b2838;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: none;
 }
+
 
 .basketIcon_bg {
     background: rgba(0, 0, 0, .8);

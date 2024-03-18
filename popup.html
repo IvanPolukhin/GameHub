@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="basketIcon">
+        <div class="basketIcon_bg"></div>
+        <div class="container">
+            <div class="basketIcon_inner active">
+                <!-- Кликабельная область для открытия окна -->
+                <div class="basketIcon_content" tabindex="0" style="display: none;">
+                    <!-- Верхняя панель с крестиком для закрытия -->
+                    <div class="basketIcon_TopBar">
+                        <div class="basketIcon_Dismiss">
+                            <div class="close_btn">
+                                <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg"
+                                    class="SVGIcon_Button SVGIcon_X_Line" x="0px" y="0px" width="256px" height="256px"
+                                    viewBox="0 0 256 256">
+                                    <line fill="none" stroke="#FFFFFF" stroke-width="45" stroke-miterlimit="10" x1="212"
+                                        y1="212" x2="44" y2="44">
+                                    </line>
+                                    <line fill="none" stroke="#FFFFFF" stroke-width="45" stroke-miterlimit="10" x1="44"
+                                        y1="212" x2="212" y2="44">
+                                    </line>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Содержимое окна: название, изображение, цена -->
+                    <div class="basketIcon_dialog">
+                        <div class="DialogContent_InnerWidth">
+                            <div class="DialogContent_title">Game Title</div>
+                            <div class="DialogContent_body">
+                                <div class="DialogContent_panel">
+                                    <div class="panel_inner">
+                                        <div class="panel_body">
+                                            <div class="panel_right">
+                                                <!-- Название игры -->
+                                                <div class="panel_name">
+                                                    <div class="game_title">Game Title</div>
+                                                </div>
+                                                <!-- Иконки для платформ -->
+                                                <div class="panel_iconAndPrice">
+                                                    <div class="panel_icons">
+                                                        <span class="panel_icon">
+                                                            <!-- Иконки платформ -->
+                                                            <!-- Пример: Windows -->
+                                                            <span title="Windows">
+                                                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                                    x="0px" y="0px"
+                                                                    class="SVGIcon_Button SVGIcon_WindowsLogo"
+                                                                    width="100%" height="100%" viewBox="0 0 128 128"
+                                                                    enable-background="new 0 0 128 128">
+                                                                    <!-- Код иконки -->
+                                                                </svg>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                    <!-- Цена игры -->
+                                                    <div class="panel_price">
+                                                        <span class="panel_price-span">
+                                                            <div class="panel_price-left"></div>
+                                                            <div class="_1f3PID2BXOm-jAr3LGxkW3">$19.99</div>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Кнопки для продолжения покупок и просмотра корзины -->
+                            <div class="DialogContent_btn">
+                                <button type="button"
+                                    class="DialogButton _DialogLayout Secondary Focusable continue_shopping_btn"
+                                    tabindex="0">
+                                    Continue shopping
+                                </button>
+                                <button type="button"
+                                    class="DialogButton _DialogLayout Secondary Focusable view_basket_btn" tabindex="0">
+                                    View basket
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>

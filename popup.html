@@ -14,7 +14,7 @@
         <div class="container">
             <div class="basketIcon_inner active">
                 <!-- Кликабельная область для открытия окна -->
-                <div class="basketIcon_content" tabindex="0" style="display: none;">
+                <div class="basketIcon_content" id="basketIcon_content" tabindex="0" style="display: none;">
                     <!-- Верхняя панель с крестиком для закрытия -->
                     <div class="basketIcon_TopBar">
                         <div class="basketIcon_Dismiss">
@@ -32,49 +32,10 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Содержимое окна: название, изображение, цена -->
+                    <!-- Содержимое окна: название игры и цена -->
                     <div class="basketIcon_dialog">
                         <div class="DialogContent_InnerWidth">
-                            <div class="DialogContent_title">Game Title</div>
-                            <div class="DialogContent_body">
-                                <div class="DialogContent_panel">
-                                    <div class="panel_inner">
-                                        <div class="panel_body">
-                                            <div class="panel_right">
-                                                <!-- Название игры -->
-                                                <div class="panel_name">
-                                                    <div class="game_title">Game Title</div>
-                                                </div>
-                                                <!-- Иконки для платформ -->
-                                                <div class="panel_iconAndPrice">
-                                                    <div class="panel_icons">
-                                                        <span class="panel_icon">
-                                                            <!-- Иконки платформ -->
-                                                            <!-- Пример: Windows -->
-                                                            <span title="Windows">
-                                                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                                                    x="0px" y="0px"
-                                                                    class="SVGIcon_Button SVGIcon_WindowsLogo"
-                                                                    width="100%" height="100%" viewBox="0 0 128 128"
-                                                                    enable-background="new 0 0 128 128">
-                                                                    <!-- Код иконки -->
-                                                                </svg>
-                                                            </span>
-                                                        </span>
-                                                    </div>
-                                                    <!-- Цена игры -->
-                                                    <div class="panel_price">
-                                                        <span class="panel_price-span">
-                                                            <div class="panel_price-left"></div>
-                                                            <div class="_1f3PID2BXOm-jAr3LGxkW3">$19.99</div>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <div class="DialogContent_title">Basket Game</div>
                             <!-- Кнопки для продолжения покупок и просмотра корзины -->
                             <div class="DialogContent_btn">
                                 <button type="button"

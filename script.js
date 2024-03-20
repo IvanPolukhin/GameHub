@@ -139,47 +139,41 @@ document.addEventListener("DOMContentLoaded", function () {
     startSlideShow1();
 
     // BasketIcon
-    const objectElement = document.querySelector('object[data="popup.html"]');
-    objectElement.addEventListener("load", function () {
-        const objectDoc = objectElement.contentDocument;
-        const basketIconContent = objectDoc.getElementById('basketIcon_content');
+    const sliderItems = document.querySelectorAll(".slider-item");
+    const basketIconContent = document.getElementById("basketIcon_content");
 
-        const basketIcon = document.querySelector('.basketIcon');
-        const sliderImages = document.querySelectorAll('.slide img');
-        const closeBtn = basketIcon.querySelector('.close_btn');
-        const continueShoppingBtn = basketIcon.querySelector('.continue_shopping_btn');
-        const viewBasketBtn = basketIcon.querySelector('.view_basket_btn');
-
-        sliderImages.forEach(image => {
-            image.addEventListener('click', () => {
-                // Отображаем информацию о выбранной игре в окне
-                basketIcon.querySelector('.DialogContent_title').textContent = "Basket Game";
-                // Показываем окно с информацией
-                basketIconContent.style.display = 'block';
-            });
+    // Добавляем обработчик события клика для каждого слайдера
+    sliderItems.forEach(function (item) {
+        item.addEventListener("click", function () {
+            basketIconContent.style.display = "block";
         });
+    });
 
-        // Закрытие окна при клике вне него
-        document.addEventListener('click', (event) => {
-            if (!event.target.closest('.basketIcon') && !event.target.closest('.slide')) {
-                basketIconContent.style.display = 'none';
-            }
-        });
+    // При клике на крестик закрыть всплывающее окно
+    const closeBtn = document.querySelector(".close_btn");
+    closeBtn.addEventListener("click", function () {
+        basketIconContent.style.display = "none";
+    });
 
-        // Обработчик для кнопки закрытия окна
-        closeBtn.addEventListener('click', () => {
-            basketIconContent.style.display = 'none';
-        });
+    // Закрыть всплывающее окно при клике вне его области
+    window.addEventListener("click", function (event) {
+        if (event.target === basketIconContent) {
+            basketIconContent.style.display = "none";
+        }
+    });
 
-        // Обработчики для кнопок продолжения покупок и просмотра корзины
-        continueShoppingBtn.addEventListener('click', () => {
-            basketIconContent.style.display = 'none'; // Закрываем окно корзины
-            // Здесь можно добавить дополнительную логику для кнопки продолжения покупок
-        });
+    // Обработчик события для кнопки "Continue shopping"
+    const continueShoppingBtn = document.querySelector(".continue-shopping-btn");
+    continueShoppingBtn.addEventListener("click", function () {
+        // Находим всплывающее окно
+        const basketIconContent = document.getElementById("basketIcon_content");
+        // Скрываем всплывающее окно
+        basketIconContent.style.display = "none";
+    });
 
-        viewBasketBtn.addEventListener('click', () => {
-            basketIconContent.style.display = 'none'; // Закрываем окно корзины
-            // Здесь можно добавить дополнительную логику для кнопки просмотра корзины
-        });
+    const viewBasketBtn = document.querySelector(".view-basket-btn");
+    viewBasketBtn.addEventListener("click", function () {
+        // Перенаправляем пользователя на страницу корзины
+        window.location.href = "basket.html";
     });
 });

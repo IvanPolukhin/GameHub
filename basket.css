@@ -325,6 +325,7 @@ h6 {
 
 .game_name {
     margin-top: 0px;
+    color: #fff;
     display: flex;
     align-items: center;
     margin-top: 8px;
@@ -339,6 +340,7 @@ h6 {
     margin-top: 8px;
     flex-wrap: wrap;
     font-size: 13px;
+    color: #fff;
 }
 
 .whats_next {

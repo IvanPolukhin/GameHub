@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             const gameIconAndPrice = document.createElement("div");
             gameIconAndPrice.classList.add("game_iconAndPrice");
-            gameIconAndPrice.textContent = isNaN(parseFloat(item.price)) ? '0₴' : item.price + '₴'; // Если цена не число, устанавливаем 0₴, иначе используем цену игры
+            gameIconAndPrice.textContent = isNaN(parseFloat(item.price)) ? 'Free' : item.price; // Если цена не число, устанавливаем 0₴, иначе используем цену игры
             gameRight.appendChild(gameIconAndPrice);
 
             gameInner.appendChild(gameLeft);

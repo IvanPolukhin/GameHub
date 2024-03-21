@@ -50,11 +50,11 @@
         <div class="container">
             <h1 class="slider_title">FEATURED & RECOMMENDED</h1>
             <div class="slider-wrapper">
-                <div class="slide slider-item">
+                <div class="slide slider-item" data-gameId="1">
                     <div class="left-side">
                         <!-- Картинка основной игры -->
-                        <img id="mainGameImage0" class="game_image" src="img/cs2.jpg" alt="Game 1"
-                            data-image-url="img/cs2.jpg">
+                        <img id="mainGameImage0" class="game_image img-game" src="img/cs2.jpg" alt="Game 1"
+                            data-image-url="img/cs2.jpg" data-alt="Counter-Strike 2">
                     </div>
                     <div class="right-side">
                         <!-- Название игры -->
@@ -78,11 +78,11 @@
                         <p class="slider_price game_price">Free to play</p>
                     </div>
                 </div>
-                <div class="slide slider-item">
+                <div class="slide slider-item" data-gameId="2">
                     <div class="left-side">
                         <!-- Картинка основной игры -->
-                        <img id="mainGameImage5" src="img/dota 2 img1.jpg" alt="Game 2"
-                            data-image-url="img/dota 2 img1.jpg">
+                        <img id="mainGameImage5" class="img-game" data-alt="Dota 2" src="img/dota 2 img1.jpg"
+                            alt="Game 2" data-image-url="img/dota 2 img1.jpg">
                     </div>
                     <div class="right-side">
                         <!-- Название игры -->
@@ -106,10 +106,11 @@
                         <p class="slider_price game_price">Free to play</p>
                     </div>
                 </div>
-                <div class="slide slider-item">
+                <div class="slide slider-item" data-gameId="3">
                     <div class="left-side">
                         <!-- Картинка основной игры -->
-                        <img id="mainGameImage10" class="game_image" src="img/baldur's gate 3 img1.jpg" alt="Game 3"
+                        <img id="mainGameImage10" class="game_image img-game" data-alt="Baldur's Gate 3"
+                            src="img/baldur's gate 3 img1.jpg" alt="Game 3"
                             data-image-url="img/baldur's gate 3 img1.jpg">
                     </div>
                     <div class="right-side">
@@ -131,14 +132,14 @@
                             </div>
                         </div>
                         <!-- Цена игры -->
-                        <p class="slider_price game_price" game_price>899₴</p>
+                        <p class="slider_price game_price">899₴</p>
                     </div>
                 </div>
-                <div class="slide slider-item">
+                <div class="slide slider-item" data-gameId="4">
                     <div class="left-side">
                         <!-- Картинка основной игры -->
-                        <img id="mainGameImage15" class="game_image" src="img/pubg img1.jpg" alt="Game 4"
-                            data-image-url="img/pubg img.jpg">
+                        <img id="mainGameImage15" class="game_image img-game" data-alt="PUBG: BATTLEGROUNDS"
+                            src="img/pubg img1.jpg" alt="Game 4" data-image-url="img/pubg img.jpg">
                     </div>
                     <div class="right-side">
                         <!-- Название игры -->
@@ -191,59 +192,71 @@
                     <!-- страница слайдера -->
                     <div class="specialOffers-item">
                         <!-- игра -->
-                        <div class="specialOffers-game1 slider-item">
+                        <div class="specialOffers-game1 slider-item" data-gameId="5">
                             <!-- фото игры -->
                             <div class="game1-img">
-                                <img src="img/saintsRow img1.jpg" alt="" data-image-url="img/saintsRow img1.jpg">
+                                <img src="img/saintsRow img1.jpg" alt="" data-image-url="img/saintsRow img1.jpg"
+                                    class="img-game" data-alt="saintsRow">
                             </div>
                             <!-- информация о игре -->
                             <div class="game1-content">
                                 <h2>PUBLISHER SALE</h2>
+                                <h3 class="gameName" style="display: none;">Saints Row</h3>
                                 <div class="action">Offer ends 14 Mar @ 7:00pm.</div>
-                                <div class="price">Up to -90%</div>
+                                <div class="price game_price">Up to -90%</div>
                             </div>
                         </div>
                         <!-- игра -->
-                        <div class="specialOffers-game2 slider-item">
+                        <div class="specialOffers-game2 slider-item" data-gameId="6">
                             <!-- фото игры -->
-                            <div class="game2-img"><img src="img/aceCombat7 img1.jpg" alt=""
-                                    data-image-url="img/aceCombat7 img1.jpg"></div>
+                            <div class="game2-img">
+                                <img src="img/aceCombat7 img1.jpg" alt="" data-image-url="img/aceCombat7 img1.jpg"
+                                    class="img-game" data-alt="aceCombat7">
+                            </div>
                             <!-- информация о игре -->
                             <div class="game2-content">
                                 <h2>PUBLISHER SALE</h2>
+                                <h3 class="gameName" style="display: none;">Ace Combat 7</h3>
                                 <div class="action">Offer ends 7 Mar @ 8:00pm.</div>
-                                <div class="price">Up to -91%</div>
+                                <div class="price game_price">Up to -91%</div>
                             </div>
                         </div>
                         <!-- игра -->
                         <div class="specialOffers-games">
-                            <div class="specialOffers-game3 slider-item">
+                            <div class="specialOffers-game3 slider-item" data-gameId="7">
                                 <!-- фото игры -->
-                                <div class="game3-img"><img src="img/mount&Bladell img1.jpg" alt=""
-                                        data-image-url="img/mount&Bladell img1.jpg"></div>
+                                <div class="game3-img">
+                                    <img src="img/mount&Bladell img1.jpg" alt=""
+                                        data-image-url="img/mount&Bladell img1.jpg" class="img-game"
+                                        data-alt="mount&Bladell">
+                                </div>
                                 <!-- информация о игре -->
                                 <div class="game3-content">
+                                    <h3 class="gameName" style="display: none;">Mount Bladell</h3>
                                     <div class="discount-block">
                                         <div class="discount-pct">-70%</div>
                                         <div class="discount-price">
                                             <div class="discount-original-price">540₴</div>
-                                            <div class="discount-final-price">162₴</div>
+                                            <div class="discount-final-price game_price">162₴</div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <!-- игра -->
-                            <div class="specialOffers-game4 slider-item">
+                            <div class="specialOffers-game4 slider-item" data-gameId="8">
                                 <!-- фото игры -->
-                                <div class="game4-img"><img src="img/dyingLight2 img1.jpg" alt=""
-                                        data-image-url="img/dyingLight2 img1.jpg"></div>
+                                <div class="game4-img">
+                                    <img src="img/dyingLight2 img1.jpg" alt="" data-image-url="img/dyingLight2 img1.jpg"
+                                        class="img-game" data-alt="dyingLight2">
+                                </div>
                                 <!-- информация о игре -->
                                 <div class="game4-content">
+                                    <h3 class="gameName" style="display: none;">Dying Light 2</h3>
                                     <div class="discount-block">
                                         <div class="discount-pct">-67%</div>
                                         <div class="discount-price">
                                             <div class="discount-original-price">379₴</div>
-                                            <div class="discount-final-price">125₴</div>
+                                            <div class="discount-final-price game_price">125₴</div>
                                         </div>
                                     </div>
                                 </div>
@@ -254,60 +267,71 @@
                     <!-- страница -->
                     <div class="specialOffers-item">
                         <!-- игра -->
-                        <div class="specialOffers-game1 slider-item">
+                        <div class="specialOffers-game1 slider-item" data-gameId="9">
                             <!-- фото игры -->
                             <div class="game1-img">
-                                <img src="img/crabChampions img1.jpg" alt=""
-                                    data-image-url="img/crabChampions img1.jpg">
+                                <img src="img/crabChampions img1.jpg" alt="" data-image-url="img/crabChampions img1.jpg"
+                                    class="img-game" data-alt="crabChampions">
                             </div>
                             <!-- информация о игре -->
                             <div class="game1-content">
                                 <h2>MIDWEEK DEAL</h2>
+                                <h3 class="gameName" style="display: none;">Crab Champions</h3>
                                 <div class="action">Offer ends 11 Mar @ 7:00pm.</div>
-                                <div class="price">Up to -25%</div>
+                                <div class="price game_price">Up to -25%</div>
                             </div>
                         </div>
                         <!-- игра -->
-                        <div class="specialOffers-game2 slider-item">
+                        <div class="specialOffers-game2 slider-item" data-gameId="10">
                             <!-- фото игры -->
-                            <div class="game2-img"><img src="img/againstTheStorm img1.jpg" alt=""
-                                    data-image-url="img/againstTheStorm.jpg"></div>
+                            <div class="game2-img">
+                                <img src="img/againstTheStorm img1.jpg" alt="" data-image-url="img/againstTheStorm.jpg"
+                                    class="img-game" data-alt="againstTheStorm">
+                            </div>
                             <!-- информация о игре -->
                             <div class="game2-content">
                                 <h2>PUBLISHER SALE</h2>
+                                <h3 class="gameName" style="display: none;">Against The Storm</h3>
                                 <div class="action">Offer ends 7 Mar @ 8:00pm.</div>
-                                <div class="price">Up to -35%</div>
+                                <div class="price game_price">Up to -35%</div>
                             </div>
                         </div>
                         <!-- игра -->
                         <div class="specialOffers-games">
-                            <div class="specialOffers-game3 slider-item">
+                            <div class="specialOffers-game3 slider-item" data-gameId="11">
                                 <!-- фото игры -->
-                                <div class="game3-img"><img src="img/forza img1.jpg" alt=""
-                                        data-image-url="img/forza img1.jpg"></div>
+                                <div class="game3-img">
+                                    <img src="img/forza img1.jpg" alt="" data-image-url="img/forza img1.jpg"
+                                        class="img-game" data-alt="forza">
+                                </div>
                                 <!-- информация о игре -->
                                 <div class="game3-content">
+                                    <h3 class="gameName" style="display: none;">Forza</h3>
                                     <div class="discount-block">
                                         <div class="discount-pct">-50%</div>
                                         <div class="discount-price">
                                             <div class="discount-original-price">1199₴</div>
-                                            <div class="discount-final-price">599₴</div>
+                                            <div class="discount-final-price game_price">599₴</div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <!-- игра -->
-                            <div class="specialOffers-game4 slider-item">
+                            <div class="specialOffers-game4 slider-item" data-gameId="12">
                                 <!-- фото игры -->
-                                <div class="game4-img"><img src="img/monsterHunter img1.jpg" alt=""
-                                        data-image-url="img/monsterHunter img1.jpg"></div>
+                                <div class="game4-img">
+                                    <img src="img/monsterHunter img1.jpg" alt=""
+                                        data-image-url="img/monsterHunter img1.jpg" class="img-game"
+                                        data-alt="monsterHunter">
+                                </div>
                                 <!-- информация о игре -->
                                 <div class="game4-content">
+                                    <h3 class="gameName" style="display: none;">Monster Hunter</h3>
                                     <div class="discount-block">
                                         <div class="discount-pct">-30%</div>
                                         <div class="discount-price">
                                             <div class="discount-original-price">515₴</div>
-                                            <div class="discount-final-price">360₴</div>
+                                            <div class="discount-final-price game_price">360₴</div>
                                         </div>
                                     </div>
                                 </div>
@@ -317,99 +341,111 @@
                     <!-- страница -->
                     <div class="specialOffers-item">
                         <div class="specialOffers-games col1">
-                            <div class="specialOffers-game3 slider-item">
+                            <div class="specialOffers-game3 slider-item" data-gameId="13">
                                 <!-- фото игры -->
-                                <div class="game3-img"><img src="img/deepRock set1-6.jpg" alt=""
-                                        data-image-url="img/deepRock set1-6.jpg"></div>
+                                <div class="game3-img">
+                                    <img src="img/deepRock set1-6.jpg" alt="" data-image-url="img/deepRock set1-6.jpg"
+                                        class="img-game" data-alt="deepRock">
+                                </div>
                                 <!-- информация о игре -->
                                 <div class="game3-content">
+                                    <h3 class="gameName" style="display: none;">Deep Rock</h3>
                                     <div class="discount-block">
                                         <div class="discount-pct">-67%</div>
                                         <div class="discount-price">
                                             <div class="discount-original-price">379₴</div>
-                                            <div class="discount-final-price">125₴</div>
+                                            <div class="discount-final-price game_price">125₴</div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <!-- игра -->
-                            <div class="specialOffers-game4 slider-item">
+                            <div class="specialOffers-game4 slider-item" data-gameId="14">
                                 <!-- фото игры -->
                                 <div class="game4-img"><img src="img/residentEvil4 set2-6.jpg" alt=""
-                                        data-image-url="img/residentEvil4 set2-6.jpg"></div>
+                                        data-image-url="img/residentEvil4 set2-6.jpg" class="img-game"
+                                        data-alt="residentEvil4"></div>
                                 <!-- информация о игре -->
                                 <div class="game4-content">
+                                    <h3 class="gameName" style="display: none;">Resident Evil 4</h3>
                                     <div class="discount-block">
                                         <div class="discount-pct">-25%</div>
                                         <div class="discount-price">
                                             <div class="discount-original-price">1399₴</div>
-                                            <div class="discount-final-price">1049₴</div>
+                                            <div class="discount-final-price game_price">1049₴</div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="specialOffers-games col2">
-                            <div class="specialOffers-game3 slider-item">
+                            <div class="specialOffers-game3 slider-item" data-gameId="15">
                                 <!-- фото игры -->
                                 <div class="game3-img"><img src="img/dredge set3-6.jpg" alt=""
-                                        data-image-url="img/dredge set3-6.jpg"></div>
+                                        data-image-url="img/dredge set3-6.jpg" class="img-game" data-alt="dredge">
+                                </div>
                                 <!-- информация о игре -->
                                 <div class="game3-content">
+                                    <h3 class="gameName" style="display: none;">Dredge</h3>
                                     <div class="discount-block">
                                         <div class="discount-pct">-30%</div>
                                         <div class="discount-price">
                                             <div class="discount-original-price">515₴</div>
-                                            <div class="discount-final-price">360₴</div>
+                                            <div class="discount-final-price game_price">360₴</div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <!-- игра -->
-                            <div class="specialOffers-game4 slider-item">
+                            <div class="specialOffers-game4 slider-item" data-gameId="16">
                                 <!-- фото игры -->
                                 <div class="game4-img"><img src="img/nba set4-6.jpg" alt=""
-                                        data-image-url="img/nba set4-6.jpg"></div>
+                                        data-image-url="img/nba set4-6.jpg" class="img-game" data-alt="nba"></div>
                                 <!-- информация о игре -->
                                 <div class="game4-content">
+                                    <h3 class="gameName" style="display: none;">NBA</h3>
                                     <div class="discount-block">
                                         <div class="discount-pct">-84%</div>
                                         <div class="discount-price">
                                             <div class="discount-original-price">1499₴</div>
-                                            <div class="discount-final-price">239₴</div>
+                                            <div class="discount-final-price game_price">239₴</div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="specialOffers-games col3">
-                            <div class="specialOffers-game3 slider-item">
+                            <div class="specialOffers-game3 slider-item" data-gameId="17">
                                 <!-- фото игры -->
                                 <div class="game3-img"><img src="img/bu$tafellows set5-6.jpg" alt=""
-                                        data-image-url="img/bu$tafellwos set5-6.jpg"></div>
+                                        data-image-url="img/bu$tafellwos set5-6.jpg" class="img-game"
+                                        data-alt="bu$tafellwos"></div>
                                 <!-- информация о игре -->
                                 <div class="game3-content">
+                                    <h3 class="gameName" style="display: none;">Bu$Tafellwos</h3>
                                     <div class="discount-block">
                                         <div class="discount-pct">-70%</div>
                                         <div class="discount-price">
                                             <div class="discount-original-price">740₴</div>
-                                            <div class="discount-final-price">222₴</div>
+                                            <div class="discount-final-price game_price">222₴</div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <!-- игра -->
-                            <div class="specialOffers-game4 slider-item">
+                            <div class="specialOffers-game4 slider-item" data-gameId="18">
                                 <!-- фото игры -->
                                 <div class="game4-img"><img src="img/figment2 set6-6.jpg" alt=""
-                                        data-image-url="img/figment2 set6-6.jpg"></div>
+                                        data-image-url="img/figment2 set6-6.jpg" class="img-game" data-alt="figment2">
+                                </div>
                                 <!-- информация о игре -->
                                 <div class="game4-content">
+                                    <h3 class="gameName" style="display: none;">Figment 2</h3>
                                     <div class="discount-block">
                                         <div class="discount-pct">-70%</div>
                                         <div class="discount-price">
                                             <div class="discount-original-price">515₴</div>
-                                            <div class="discount-final-price">154₴</div>
+                                            <div class="discount-final-price game_price">154₴</div>
                                         </div>
                                     </div>
                                 </div>
@@ -466,7 +502,8 @@
                                     Continue shopping
                                 </button>
                                 <button type="button"
-                                    class="DialogButton _DialogLayout Secondary Focusable view_basket_btn view-basket-btn" tabindex="0">
+                                    class="DialogButton _DialogLayout Secondary Focusable view_basket_btn view-basket-btn"
+                                    tabindex="0">
                                     View basket
                                 </button>
                             </div>

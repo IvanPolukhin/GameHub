@@ -184,12 +184,14 @@ document.addEventListener("DOMContentLoaded", function () {
             const gameId = item.dataset.gameId; // Получаем идентификатор игры
             const gameName = item.querySelector(".gameName").textContent; // Получаем название игры
             const gamePrice = item.querySelector(".game_price").textContent; // Получаем цену игры
+            const gameImgSrc = item.querySelector(".img-game").src; // Получаем путь к изображению игры
     
             // Создаем объект с информацией о выбранной игре
             const game = {
                 id: gameId,
                 name: gameName,
-                price: gamePrice
+                price: gamePrice,
+                imageSrc: gameImgSrc // Добавляем путь к изображению в объект игры
             };
     
             // Добавляем выбранную игру в localStorage
@@ -197,10 +199,9 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
     
-
     function addToCart(game) {
         let cart = JSON.parse(localStorage.getItem('cart')) || [];
         cart.push(game);
         localStorage.setItem('cart', JSON.stringify(cart));
-    }
+    }    
 });

@@ -31,8 +31,8 @@ document.addEventListener("DOMContentLoaded", function () {
             gameLeft.classList.add("game_left");
 
             const gameImg = document.createElement("img");
-            gameImg.src = item.imageSrc; // Получаем src изображения из объекта товара
-            gameImg.alt = item.imageAlt; // Получаем alt изображения из объекта товара
+            gameImg.src = item.imageSrc || ''; // Получаем src изображения из объекта товара, если оно не определено, устанавливаем пустую строку
+            gameImg.alt = item.imageAlt || ''; // Получаем alt изображения из объекта товара, если оно не определено, устанавливаем пустую строку
             gameImg.classList.add("game_img");
             gameLeft.appendChild(gameImg);
 
@@ -41,12 +41,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
             const gameName = document.createElement("div");
             gameName.classList.add("game_name");
-            gameName.textContent = item.name; // Получаем название игры из объекта товара
+            gameName.textContent = item.name || ''; // Получаем название игры из объекта товара, если оно не определено, устанавливаем пустую строку
             gameRight.appendChild(gameName);
 
             const gameIconAndPrice = document.createElement("div");
             gameIconAndPrice.classList.add("game_iconAndPrice");
-            gameIconAndPrice.textContent = item.price + '₴'; // Получаем цену игры из объекта товара
+            gameIconAndPrice.textContent = isNaN(parseFloat(item.price)) ? '0₴' : item.price + '₴'; // Если цена не число, устанавливаем 0₴, иначе используем цену игры
             gameRight.appendChild(gameIconAndPrice);
 
             gameInner.appendChild(gameLeft);
@@ -62,7 +62,9 @@ document.addEventListener("DOMContentLoaded", function () {
         // Вычисляем общую стоимость выбранных игр и обновляем ее на странице
         let totalCost = 0;
         cart.forEach(function (item) {
-            totalCost += parseFloat(item.price); // Предполагается, что цена игры указана в числовом формате
+            if (!isNaN(parseFloat(item.price))) {
+                totalCost += parseFloat(item.price); // Предполагается, что цена игры указана в числовом формате
+            }
         });
         totalCostElement.textContent = totalCost.toFixed(2) + '₴'; // Отображаем общую стоимость с двумя знаками после запятой
     }

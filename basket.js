@@ -86,4 +86,10 @@ document.addEventListener("DOMContentLoaded", function () {
     continueShoppingButton.addEventListener("click", function () {
         window.location.href = "index.html"; // Перенаправляем пользователя на основную страницу
     });
+
+    const goToPaymentButton = document.querySelector(".panelBasket_button"); // Получаем кнопку "Go to payment"
+
+    goToPaymentButton.addEventListener("click", function () {
+        window.location.href = "paymentPage.html";
+    });
 });
